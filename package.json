@@ -1,6 +1,7 @@
 {
-  "name": "conference",
+  "name": "international-conference",
   "version": "0.1.0",
+  "description": "International Conference (Springer)",
   "private": true,
   "scripts": {
     "dev": "next dev",
