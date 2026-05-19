@@ -1,0 +1,97 @@
+/* Abstract line and geometric art animations */
+.animate-line-move {
+  animation: lineMove 18s ease-in-out infinite alternate;
+}
+@keyframes lineMove {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(40px); }
+}
+
+.animate-geo-move {
+  animation: geoMove 22s ease-in-out infinite alternate;
+}
+.animate-geo-move-reverse {
+  animation: geoMoveReverse 26s ease-in-out infinite alternate;
+}
+@keyframes geoMove {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-30px) scale(1.04); }
+}
+@keyframes geoMoveReverse {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(30px) scale(0.98); }
+}
+/* Slow spin animation for SVG */
+.animate-spin-slow {
+  animation: spin 32s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Floating up and down animation */
+.animate-float {
+  animation: float 12s ease-in-out infinite;
+}
+.animate-float-reverse {
+  animation: float-reverse 14s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+}
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(40px); }
+}
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Parallax animated gradient background for hero section */
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, #6366f1 0%, #a5b4fc 50%, #38bdf8 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease-in-out infinite;
+  opacity: 0.35;
+}
+
+@keyframes gradientMove {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
