@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "International Conference (Springer)",
-  description: "Official website for the International Conference in association with Springer.",
+  title: "International Conference on Cybersecurity with Quantum Network and Artificial Intelligence (Springer)",
+  description: "Official website for the International Conference on Cybersecurity with Quantum Network and Artificial Intelligence in association with Springer.",
 };
 
 export default function RootLayout({

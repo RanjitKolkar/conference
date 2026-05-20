@@ -26,7 +26,7 @@ export default function Home() {
             {/* Logo Placeholder */}
             <span className="text-4xl text-indigo-700 font-bold">LOGO</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-2 text-center">International Conference 2026</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-2 text-center">International Conference on Cybersecurity with Quantum Network and Artificial Intelligence</h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-2 text-center text-blue-700">In association with Springer</h2>
           <span className="text-md text-zinc-600 dark:text-zinc-300">www.intlconf2026.org</span>
         </div>
@@ -58,7 +58,7 @@ export default function Home() {
       </div>
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center py-20 px-4 text-center bg-white/80 dark:bg-zinc-900/80 shadow-md">
-        <h2 className="text-2xl md:text-3xl font-semibold text-zinc-800 dark:text-zinc-100 mb-2">Welcome to the International Conference 2026</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold text-zinc-800 dark:text-zinc-100 mb-2">Welcome to the International Conference on Cybersecurity with Quantum Network and Artificial Intelligence</h2>
         <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-300 mb-6">National Forensic Sciences University, Goa · December 2026</p>
         <p className="max-w-2xl text-zinc-700 dark:text-zinc-200 mb-8">Join global experts and innovators for a transformative event exploring the future of Quantum Computing, Cybersecurity, and Artificial Intelligence. Network, learn, and shape tomorrow. <br/> <span className="font-semibold text-blue-700">Submit your paper and be part of the Springer proceedings!</span></p>
         <a href="#registration" className="inline-block px-8 py-3 rounded-full bg-indigo-700 text-white font-bold text-lg shadow hover:bg-indigo-800 transition">Call for Papers</a>
@@ -72,6 +72,47 @@ export default function Home() {
           <li>Location: National Forensic Sciences University, Goa Campus</li>
           <li>Tracks: Quantum Computing, Cybersecurity, Artificial Intelligence</li>
         </ul>
+      </section>
+
+      {/* Call for Papers Section */}
+      <section className="max-w-4xl mx-auto py-16 px-4" id="call-for-papers">
+        <h3 className="text-2xl font-bold text-indigo-700 mb-4">Call for Papers</h3>
+        <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-6 mb-4 text-zinc-800 dark:text-zinc-100">
+          <p className="mb-2">We invite original research papers, review articles, and case studies in the following domains and related areas:</p>
+          <ul className="list-disc list-inside ml-4 mb-2">
+            <li>Quantum Computing: Algorithms, Applications, Hardware, Quantum Machine Learning</li>
+            <li>Cybersecurity: Cryptography, Network Security, Blockchain, Digital Forensics</li>
+            <li>Artificial Intelligence: Machine Learning, Deep Learning, NLP, Computer Vision, Robotics</li>
+            <li>Interdisciplinary topics bridging Quantum, Cybersecurity, and AI</li>
+          </ul>
+          <p className="mb-2">All accepted papers will be published in the conference proceedings by <span className="font-semibold text-blue-700">Springer</span>.</p>
+          <p className="mb-2">Important Dates:</p>
+          <ul className="list-disc list-inside ml-4">
+            <li>Paper Submission Deadline: <span className="font-semibold">31st July 2026</span></li>
+            <li>Notification of Acceptance: <span className="font-semibold">15th September 2026</span></li>
+            <li>Camera-Ready Submission: <span className="font-semibold">1st October 2026</span></li>
+          </ul>
+          <div className="mt-4">
+            <a href="#" className="inline-block px-6 py-2 rounded bg-indigo-700 text-white font-bold shadow hover:bg-indigo-800 transition">Submit Paper</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Conference Domains & Scope */}
+      <section className="max-w-4xl mx-auto py-12 px-4" id="domains">
+        <h3 className="text-2xl font-bold text-indigo-700 mb-4">Conference Domains & Scope</h3>
+        <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg p-6 text-zinc-800 dark:text-zinc-100">
+          <ul className="list-disc list-inside ml-4 space-y-1">
+            <li>Quantum Algorithms and Information Theory</li>
+            <li>Quantum Hardware and Devices</li>
+            <li>Post-Quantum Cryptography</li>
+            <li>Network and Cloud Security</li>
+            <li>AI for Security and Security for AI</li>
+            <li>Explainable AI and Trustworthy Systems</li>
+            <li>Data Privacy and Ethics in AI</li>
+            <li>Emerging Interdisciplinary Applications</li>
+          </ul>
+        </div>
       </section>
 
       {/* Schedule Placeholder */}
@@ -91,7 +132,13 @@ export default function Home() {
         <h3 className="text-2xl font-bold text-indigo-700 mb-4">Registration</h3>
         <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8 text-zinc-700 dark:text-zinc-200">
           <div className="mb-4">
-            <span className="font-semibold">Early Bird Registration:</span> <span className="text-green-700 font-bold">10% Discounted Fee</span> (till 31st August 2026)
+            <span className="font-semibold">Registration Details:</span>
+            <ul className="list-disc list-inside ml-4 mt-2 text-base">
+              <li>Each accepted paper must have at least one registered author.</li>
+              <li>Registration includes access to all sessions, conference kit, lunch, and Springer proceedings.</li>
+              <li>Early bird discount applies to all categories till <span className="font-semibold">31st August 2026</span>.</li>
+              <li>All fees are inclusive of GST.</li>
+            </ul>
           </div>
           <table className="w-full text-left border border-zinc-300 dark:border-zinc-700 mb-4">
             <thead>
@@ -114,8 +161,10 @@ export default function Home() {
               </tr>
             </tbody>
           </table>
-          <div className="text-sm text-zinc-600 dark:text-zinc-400 mb-2">* Early bird discount valid till 31st August 2026. All fees are inclusive of GST.</div>
-          <a href="#" className="inline-block px-6 py-2 rounded bg-indigo-700 text-white font-bold shadow hover:bg-indigo-800 transition">Register Now</a>
+          <div className="text-sm text-zinc-600 dark:text-zinc-400 mb-2">* Early bird discount valid till 31st August 2026.</div>
+          <div className="mt-4">
+            <a href="#" className="inline-block px-6 py-2 rounded bg-indigo-700 text-white font-bold shadow hover:bg-indigo-800 transition">Register Now</a>
+          </div>
         </div>
       </section>
 
